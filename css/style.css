@@ -1,0 +1,144 @@
+body{
+    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(88, 88, 88);
+    min-height: 100vh;
+    font-size: 1.4em;
+}
+* {
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3em;
+  flex-wrap: wrap;
+}
+
+h1{
+  color:#00a36dc5;
+  font-weight: 900;
+}
+
+.mb-3{
+  background-color: #e1f1ff;
+  padding: 2em;
+  border-radius: 0.6em;
+  min-width: 420px;
+  min-height: 400px;
+}
+
+.btn.btn-success{
+  margin-top: 2em;
+  padding:0.5em 2.5em;
+}
+
+.form-control{
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+#generic-solution{
+  margin-top: 1em;
+}
+
+@media (max-width:600px) {
+  main{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.mb-3>label{
+  margin-left: 0.6em;
+}
+
+
+#kmap-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#kmap-title {
+  font-size: 1.8rem;
+}
+
+#kmap-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 3vh;
+}
+
+#kmap {
+  width: auto;
+  height: auto;
+  border-collapse: collapse;
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 2vh;
+}
+
+.var-label {
+  padding: 5px;
+}
+
+#row-variables {
+  text-align: end;
+  vertical-align: top;
+}
+
+ .col-label, .row-label {
+  color: #088F8F;
+}
+
+.row-label {
+  color: #088F8F;
+} 
+
+.kmap-cell-label {
+  width: 100%;
+  text-align: center;
+}
+
+.kmap-cell {
+  text-align: center;
+  color:black;
+  border: 0px;
+}
+
+.kmap-row:nth-child(even) .kmap-cell:nth-child(odd),
+.kmap-row:nth-child(odd)  .kmap-cell:nth-child(even) {
+  background-color: rgb(156, 156, 156);
+}
+
+.kmap-row:nth-child(even) .kmap-cell:nth-child(odd):hover,
+.kmap-row:nth-child(odd)  .kmap-cell:nth-child(even):hover{
+  background-color: #009E60;
+  color: var(--mono12);
+}
+
+.kmap-row:nth-child(even) .kmap-cell:nth-child(even):hover,
+.kmap-row:nth-child(odd)  .kmap-cell:nth-child(odd):hover{
+  background-color: #047c4c;
+  color: var(--mono1);
+}
+
+.no-text-wrap {
+  white-space: nowrap;
+}
